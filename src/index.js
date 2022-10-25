@@ -40,3 +40,76 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const h1 = document.querySelector("h1")
+h1.innerText = "DOM Is Awesome"
+
+const navItalic = document.querySelectorAll("nav a")
+// console.log(navItalic)
+navItalic.forEach(function(item){
+  return item.className = "italic"
+})
+
+const anchor1 = document.querySelector("nav :nth-child(1)")
+anchor1.innerText = "Services";
+
+const anchor2 = document.querySelector("nav :nth-child(2)")
+anchor2.innerText = "Product";
+
+const anchor3 = document.querySelector("nav :nth-child(3)")
+anchor3.innerText = "Vision";
+
+const anchor4 = document.querySelector("nav :nth-child(4)")
+anchor4.innerText = "Features";
+
+const anchor5 = document.querySelector("nav :nth-child(5)")
+anchor5.innerText = "About";
+
+const anchor6 = document.querySelector("nav :nth-child(6)")
+anchor6.innerText = "Contact";
+
+const theButton = document.querySelector("button")
+theButton.innerText = "Get Started"
+
+
+const topPs = document.querySelectorAll(".top-content p")
+topPs[0].innerText = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+topPs[1].innerText = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const allTopContentH4 = document.querySelectorAll(".top-content h4")
+allTopContentH4[0].innerText = "Features"
+allTopContentH4[1].innerText = "About"
+
+const allBottomContentH4 = document.querySelectorAll(".bottom-content h4")
+allBottomContentH4[0].innerText = "Services"
+allBottomContentH4[1].innerText = "Product"
+allBottomContentH4[2].innerText = "Vision"
+
+
+const bottomPs = document.querySelectorAll(".bottom-content p")
+// console.log(bottomPs)
+bottomPs[0].innerText = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+bottomPs[1].innerText = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+bottomPs[2].innerText = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const contact = document.querySelector(".contact h4")
+contact.innerText = "Contact"
+
+const allP = document.querySelectorAll(".contact p")
+allP[0].innerText = "123 Way 456 Street Somewhere, USA"
+allP[1].innerText = "1 (888) 888-8888"
+allP[2].innerText = "sales@greatidea.io"
+
+const copyright = document.querySelector("footer a")
+copyright.innerText = "Copyright Great Idea! 2021"
+copyright.className = "bold"
+
+const logoImg = document.getElementById("logo-img")
+logoImg.src = "http://localhost:9000/img/logo.png" 
+// console.log(img)
+
+const ctaImg = document.getElementById("cta-img")
+ctaImg.src = "http://localhost:9000/img/cta.png"
+
+const accentImg = document.getElementById("middle-img")
+accentImg.src = "http://localhost:9000/img/accent.png"
